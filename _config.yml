@@ -1,7 +1,7 @@
 title: "Kuramoto Anna"
 name: "倉本安奈"
-url: "/Users/Meniny/Documents/GitHub/porn.github.io"
-# url: "https://porn.github.io"
+url: "/Users/Meniny/Documents/GitHub/porn"
+# url: "https://myporns.github.io/porn"
 description: "日本の元ロリータ系AV女優。神奈川県出身。"
 fbi:
   title: "FBI WARNINGS"
@@ -12,7 +12,7 @@ copyright: "倉本安奈 • 2017-2018"
 copyright_full: "Copyright &copy; 2017-2018 倉本安奈. All rights reserved."
 author: "倉本安奈"
 author_short: "Anna"
-github: "https://github.com/KuramotoAnna"
+github: "https://github.com/MyPorns"
 
 exclude: ['Gemfile.lock', 'Gemfile', 'Rakefile']
 
@@ -20,7 +20,7 @@ highlighter: rouge
 #pygments
 markdown: kramdown
 permalink: /posts/:title/
-blog_perma: "https://porn.github.io/posts"
+blog_perma: "https://myporns.github.io/porn/posts"
 # Plugins
 plugins: [jekyll-paginate,liquid]
 # Gems
