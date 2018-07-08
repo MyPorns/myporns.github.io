@@ -1,0 +1,25 @@
+<header id="header">
+	<div class="content">
+		{% if page.error %}
+		<h1>Page not found</h1>
+    <p>The page could not be found <i class="fa fa-frown-o" aria-hidden="true"></i><br />You can go to the <a href="{{ site.url }}">home page</a>,<br />or maybe you want this?</p>
+		{% else %}
+		<h1>{{ site.fbi.title }}</h1>
+		<p>{{ site.fbi.description }}</p>
+		{% endif %}
+		<ul class="actions">
+			<li><a href="{{ site.drive }}" class="button special icon fa-download">Download</a></li>
+			<!-- <li><a href="{{ site.drive }}" class="button icon fa-chevron-down scrolly">k5bu</a></li> -->
+			<li><a class="button icon fa-question-circle scrolly" onclick="javascript:alert('k5bu');">k5bu</a></li>
+		</ul>
+		<!-- <a class="mas" href=""><img src="{{ site.url }}/img/mas/mas_en.svg" height="52" alt="" /></a> -->
+		<!-- <div class="subcontent">
+      Requires <span class="highlight">Mac OS X 10.9</span> or newer<br />
+      <a href="{{ site.url }}/changelog" class="scrolly"><i class="fa fa-clock-o" aria-hidden="true"></i> Changelog</a> | <a href="#beta" class="scrolly"><i class="fa fa-flask" aria-hidden="true"></i> Beta</a> | <a href="#legacy" class="scrolly"><i class="fa fa-coffee" aria-hidden="true"></i> Legacy</a><br
+      /> MD5: <span class="highlight">539299830b96623c526f8938c5d3e5dc</span>
+    </div> -->
+	</div>
+	<div class="image logo">
+		<div class="inner"><img src="{{ site.url }}/img/Logo-512x512.png" alt="Logo" /></div>
+	</div>
+</header>

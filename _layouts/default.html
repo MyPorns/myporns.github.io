@@ -1,0 +1,13 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body {% if page.error %}class="error"{% endif %} id="top">
+		{% include toolbar.html %}
+		{% include banner.html %}
+		{{ content }}
+		{% include footer.html %}
+	</body>
+</html>
