@@ -1,0 +1,28 @@
+title: "Kuramoto Anna"
+name: "倉本安奈"
+url: "https://anna.github.io"
+description: "日本の元ロリータ系AV女優。神奈川県出身。"
+fbi:
+  title: "FBI WARNINGS"
+  description: "Federal Law provides severe civil<br />and criminal penalties for the<br />unauthorized reproduction, distribution,<br />or exhibition of copyrighted motion pictures."
+drive: "https://pan.baidu.com/s/1CyQDpHNgCqDF_NAxsstMGQ"
+password: "k5bu"
+copyright: "倉本安奈 • 2017-2018"
+copyright_full: "Copyright &copy; 2017-2018 倉本安奈. All rights reserved."
+author: "倉本安奈"
+author_short: "Anna"
+github: "https://github.com/KuramotoAnna"
+
+exclude: ['Gemfile.lock', 'Gemfile', 'Rakefile']
+
+highlighter: rouge
+#pygments
+markdown: kramdown
+permalink: /posts/:title/
+blog_perma: "https://anna.github.io/posts"
+# Plugins
+plugins: [jekyll-paginate,liquid]
+# Gems
+gems: [jekyll-paginate,liquid]
+paginate: 5
+paginate_path: "/posts/page/:num"
