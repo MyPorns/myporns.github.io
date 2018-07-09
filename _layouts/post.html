@@ -10,6 +10,25 @@ layout: default
 		max-width: 200px;
 	}
 </style>
-<div class="post_content">
+
+<article class="post_content">
 	{{ content }}
-</div>
+</article>
+
+<section id="beta" class="wrapper style2 special">
+	<header class="major">
+		<h2><i class="fa fa-flask" aria-hidden="true"></i> Navigator</h2>
+		<!-- <p> <a href="https://"><i class="fa fa-bug" aria-hidden="true"></i> Issues</a>.</p> -->
+	</header>
+	<ul class="actions">
+		<!-- <p>There is no beta available at the moment.</p> -->
+
+		{% if page.next %}
+		<li><a href="{{ site.url }}{{ page.next.url }}" class="button icon fa-chevron-up scrolly">Newer</a></li>
+		{% endif %}
+
+		{% if page.previous %}
+		<li><a href="{{ site.url }}{{ page.previous.url }}" class="button icon fa-chevron-down scrolly">Older</a></li>
+		{% endif %}
+	</ul>
+</section>
