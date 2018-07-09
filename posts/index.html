@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Porns"
+---
+<section id="info" class="wrapper">
+	<div class="inner alt">
+		{% for post in paginator.posts %}
+		<section class="spotlight">
+			<div class="image square"><img src="{{ site.url }}/img/home/03.jpg" alt="" /></div>
+			<div class="content">
+				<h3><a href="{{ site.url }}{{ post.url }}">[{{ post.date | date: "%b %d, %Y" }}] {{ post.title }}</a></h3>
+				<p>{{ post.excerpt | strip_html | strip_newlines | slice: 0, 100 }}</p>
+			</div>
+		</section>
+		{% endfor %}
+	</div>
+</section>
+
+<section id="beta" class="wrapper style2 special">
+	<header class="major">
+		<h2><i class="fa fa-flask" aria-hidden="true"></i> Paginator</h2>
+		<!-- <p>You can test the newest features of Keka before they are released.<br />If you find a bug or have something to report, head over to <a href="https://issues.keka.io"><i class="fa fa-bug" aria-hidden="true"></i> Issues</a>.</p> -->
+	</header>
+	<ul class="actions">
+		<!-- <p>There is no beta available at the moment.</p> -->
+		
+		{% if paginator.previous_page %}
+		<li><a href="{{ site.url }}{{ paginator.previous_page_path }}" class="button icon fa-chevron-up scrolly">Newer</a></li>
+		{% endif %}
+
+		{% if paginator.next_page %}
+		<li><a href="{{ site.url }}{{ paginator.next_page_path }}" class="button icon fa-chevron-down scrolly">Older</a></li>
+		{% endif %}
+	</ul>
+</section>
