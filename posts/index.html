@@ -16,6 +16,7 @@ title: "Porns"
 	</div>
 </section>
 
+{% if paginator.previous_page %}{% if paginator.next_page %}
 <section id="beta" class="wrapper style2 special">
 	<header class="major">
 		<h2><i class="fa fa-flask" aria-hidden="true"></i> Paginator</h2>
@@ -23,7 +24,7 @@ title: "Porns"
 	</header>
 	<ul class="actions">
 		<!-- <p>There is no beta available at the moment.</p> -->
-		
+
 		{% if paginator.previous_page %}
 		<li><a href="{{ site.url }}{{ paginator.previous_page_path }}" class="button icon fa-chevron-up scrolly">Newer</a></li>
 		{% endif %}
@@ -33,3 +34,4 @@ title: "Porns"
 		{% endif %}
 	</ul>
 </section>
+{% endif %}{% endif %}
