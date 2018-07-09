@@ -12,6 +12,15 @@ layout: default
 </style>
 
 <article class="post_content">
+	<h2><i class="fa fa-flask" aria-hidden="true"></i> {{ page.title }}</h2>
+	<br />
+	{% for img in page.images %}
+	<img src="{{ img }}"/><br />
+	{% endfor %}
+	{% if page.torrent.size > 0 %}
+	<br />
+	<a href="{{ page.torrent }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i><span>Download Now</span></a>
+	{% endif %}
 	{{ content }}
 </article>
 
