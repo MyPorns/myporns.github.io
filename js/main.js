@@ -39,6 +39,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			skel
 		.on('-medium !medium', function() {
 			$body.removeClass('is-mobile');
+			$body.addClass('');
 		})
 		.on('+medium', function() {
 			$body.addClass('is-mobile');
