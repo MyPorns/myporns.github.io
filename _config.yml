@@ -25,5 +25,5 @@ blog_perma: "https://myporns.github.io/posts"
 plugins: [jekyll-paginate,liquid]
 # Gems
 gems: [jekyll-paginate,liquid]
-paginate: 5
+paginate: 15
 paginate_path: "/posts/page/:num"
