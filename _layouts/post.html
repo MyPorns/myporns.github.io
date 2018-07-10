@@ -8,7 +8,6 @@ layout: default
 	}
 	.post_content img {
 		max-width: 200px;
-		background: url({{ site.url }}/img/home/03.jpg) no-repeat scroll 0 0;
 	}
 </style>
 
@@ -16,7 +15,7 @@ layout: default
 	<h2><i class="fa fa-flask" aria-hidden="true"></i> {{ page.title }}</h2>
 	<br />
 	{% for img in page.images %}
-	<img src="{{ img }}"/><br />
+	<a href="{{ img }}"><img src="{{ img }}" alt="{{ img }}"/></a><br />
 	{% endfor %}
 	{% if page.torrent.size > 0 %}
 	<br />
