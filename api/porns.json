@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /api/porns.json
+---
+{
+  "porns": [{% for post in site.posts %}
+      {
+        {% if site.api.review %}
+        "image": "{{ site.url }}/img/placeholder.png",
+        {% else %}
+        "image": "{{ post.images | first }}",
+        {% endif %}
+        "title": "{{ post.title }}",
+        "detail": "{{ post.title }}",
+        "category": "Porn",
+        "date": "{{ post.date | date: '%b %d, %Y' }}",
+        "url": "{{ site.url }}{{ post.url }}",
+        "template": "{{ site.url }}{{ post.url }}",
+        "quote": false,
+        {% assign exc = (post.excerpt | strip_html | replace: '"','' | replace: "'",'' | strip_newlines) %}
+        "description": "{{ exc }}"
+      }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+  ]
+}
