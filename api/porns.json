@@ -3,7 +3,18 @@ layout: null
 permalink: /api/porns.json
 ---
 {
-  "porns": [{% for post in site.posts %}
+  "porns": [
+      {
+        "image": "{{ site.url }}/img/Logo-512x512.png",
+        "title": "{{ site.title }}",
+        "detail": "{{ site.description }}",
+        "category": "Brief",
+        "date": "{{ site.copyright }}",
+        "url": "{{ site.url }}",
+        "template": "{{ site.url }}",
+        "quote": false,
+        "description": "{{ site.description }}"
+      },{% for post in site.posts %}
       {
         {% if site.api.review %}
         "image": "{{ site.url }}/img/placeholder.png",
@@ -16,8 +27,7 @@ permalink: /api/porns.json
         "date": "{{ post.date | date: '%b %d, %Y' }}",
         "url": "{{ site.url }}{{ post.url }}",
         "template": "{{ site.url }}{{ post.url }}",
-        "quote": false,
-        {% assign exc = (post.excerpt | strip_html | replace: '"','' | replace: "'",'' | strip_newlines) %}
+        "quote": false,{% assign exc = (post.excerpt | strip_html | replace: '"','' | replace: "'",'' | strip_newlines) %}
         "description": "{{ exc }}"
       }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
   ]
