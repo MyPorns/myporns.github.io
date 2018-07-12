@@ -46,10 +46,10 @@ find: ["Anal-Sex", "Amateur", "Lesbian", "Deep-Throat", "Doggy-Style", "Licking"
 		</section>
 
 		<section class="special">
-			<h3>Here you can find:</h3>
+			<h3>You may also be interested in...</h3>
 			<ul class="icons labeled">
-				{% for item in page.find %}
-				<li>{{ item }}</span>
+				{% for item in site.data.sites %}
+				<li><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></span>
 					</span>
 				</li>
 				{% endfor %}
